@@ -15,8 +15,45 @@ With the increased dependence on online learning platformsand educational resour
 
 You can see a visualisation of the master branch educor.ttl using [WebVOWL](http://ontology.tib.eu/educor/visualization)
 
-This is an overview of the classes in EduCOR ontology.
+This is an overview of the classes in EduCOR ontology. 
 ![](EduCOR.png)
+
+Through our requirement analysis we identified the key components for our representation. These key components formulate homonym patterns. Each pattern of the ontology is highlighted individually: 
+
+A: Educational resource pattern 
+
+B: Skill Pattern
+
+C: Knowledge topic Pattern
+
+D: Test pattern
+
+E: Learning path pattern
+
+F: Recommendation Pattern
+
+G: User profile pattern
+
+## General Use-Case 
+
+An OER repository owner could utilise the EduCOR ontology to model the learning materials in their repository. 
+The repository serves learners through a standard search and information retrieval functionality, which is to be ready for integrating with an automatic decision-support system in the future with minimum to zero adjustments of the repository structure.
+
+## Ontology Competency Questions
+
+EduCOR seeks to assist OER repository owners and e-learning system designers when planning to include personalised learning feautures in their systems.
+
+Q1:   How to retrieve OERs from multiple sources for a learning goal?
+
+Q2:   How can a personalized OER difficulty be chosen for the user?
+
+Q3:   How to provide an OER to a user with a specific access mode?
+
+Q4:   How to retrieve required OERs for a certain job skill?
+
+Q5:   What is required to generate a personalized learning path?
+
+Q6:   How to personalize a learning recommendation based on a user’s psychological state?
 
 ## Tools used during development
 

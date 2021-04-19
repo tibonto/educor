@@ -1,0 +1,28 @@
+
+# Ontology metadata attributes required for registration in the TIB ontolgoy hub.
+# This file should be maintaind under the source control and must be released anongside the ontology, under the same versioning scheme.
+# The file name is identical to the ontology's ttl file with .txt extension.
+
+shortName: EduCOR
+
+title: EduCOR: An Educational and Career-Oriented Recommendation Ontology
+
+description: An educational ontology for personalised recommendation learning systems that is based on learning path and user profile. It represents the key components for a personalised learning system based on our requirement analysis.
+
+autorFullName: Eleni Ilkou, Hasan Abu-Rasheed, Mohammadreza Tavakoli, Dr. Sherzod Hakimov, Dr. Gabor Kismihok, Prof. Dr. Soeren Auer, Prof. Dr. Wolfgang Nejdl
+
+authorEmail: ilkou@l3s.de, hasan.abu.rasheed@uni-siegen.de, tavakoli@l3s.de, sherzod.hakimov@tib.eu, Gabor.Kismihok@tib.eu, auer@l3s.de, nejdl@l3s.de
+
+maintainerFullname: Eleni Ilkou, Hasan Abu-Rasheed, Mohammadreza Tavakoli, Dr. Sherzod Hakimov
+
+maintainerEmail: ilkou@l3s.de, hasan.abu.rasheed@uni-siegen.de, tavakoli@l3s.de, sherzod.hakimov@tib.eu
+
+keywords: Ontology, OWL, Educational Resources, Open Education, Labour Market, Skill, Job, Recommender
+
+license: Creative Commons Zero v1.0 Universal
+
+version: 0.0.1
+
+repositoryURL: https://github.com/tibonto/educor#
+
+releaseURL: ontology.tib.eu/educor/

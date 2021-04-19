@@ -34,10 +34,22 @@ F: Recommendation Pattern
 
 G: User profile pattern
 
-## General Use-Case 
+## Use-Case 
+
+### General
 
 An OER repository owner could utilise the EduCOR ontology to model the learning materials in their repository. 
 The repository serves learners through a standard search and information retrieval functionality, which is to be ready for integrating with an automatic decision-support system in the future with minimum to zero adjustments of the repository structure.
+
+### Application Specific
+
+We also used our ontology in specific use case, in the development of [eDoer](http://edoer.eu) platform, an open learning recommender system prototype, focusing on Data Science related jobs.
+
+On the eDoer platform, learners can set their target job, and the system will provide them with a list of skills they need to master for that particular job. Learners are offered to select one or more of those skills and set them as learning objectives. Moreover, learners can search through other existing skills and add additional learning goals. They can also set their learning preferences (type of learning materials, the length of content, etc.), which results in personalised learning content recommendations. The generated learning path includes the target skills and the necessary knowledge topics covered for each skill. Subsequently, users receive OERs for each of the knowledge topics, which can be viewed, rated, and changed. Based on the users' feedback (i.e. ratings) on each of the recommendations, eDoer updates the users' preferences to capture any changes in user preferences. Moreover, there are various assessments available both on skill and knowledge topic levels that provide means to monitor the learning process.
+
+You can watch a demo of eDoer here:
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/5PRcUgNa7tA/0.jpg)](https://www.youtube.com/watch?v=5PRcUgNa7tA)
 
 ## Ontology Competency Questions
 

@@ -54,19 +54,113 @@ You can watch a demo of eDoer here:
 
 ## Ontology Competency Questions
 
-EduCOR seeks to assist OER repository owners and e-learning system designers when planning to include personalised learning features in their systems.
+EduCOR seeks to assist OER repository owners and e-learning system designers when planning to include personalised learning features in their systems. We designed a set of competency questions to reflect the mian features of EduCOR when implelented in an elearning system.
 
-Q1:   How to retrieve OERs from multiple sources for a learning goal?
+**_Q1:   How to retrieve OERs from multiple sources for a learning goal?_**
 
-Q2:   How can a personalized OER difficulty be chosen for the user?
+This question represents the adaptability feature of our ontology. EduCOR has been tested against multiple ER and OER repositories. It scored more that 83% of [Recall](https://en.wikipedia.org/wiki/Precision_and_recall) value for each one of them. This means that a designer of an e-learning system will have minimum adjustments to adopt OERs from multiple sources in their system.
+Retrieving the OERs from EduCOR based on a certain learningGoal is achieved through the SPARQL query:
 
-Q3:   How to provide an OER to a user with a specific access mode?
+```
+PREFIX ec: <https://github.com/tibonto/educor#>
+PREFIX dc: <http://purl.org/dcx/lrmi-vocabs/alignmentType/>
 
-Q4:   How to retrieve required OERs for a certain job skill?
+SELECT * 
+WHERE {
+    ?learningPath      ?hasLearningGoal            ?LearningGoal.
+    ?learningPath      ?consistsOfKnowledge        ?knowledgeTopic.
+    ?knowledgeTopic    ?hasEducationalResource     ?EducationalResource.
+}
+```
 
-Q5:   What is required to generate a personalized learning path?
+**_Q2:   How can a personalized OER difficulty be chosen for the user?_**
 
-Q6:   How to personalize a learning recommendation based on a user’s psychological state?
+This question reflects the ability of EduCOR to personalize ER and OER recommendations for a user, based on the learning material properties. The example in this case if the difficulty level of the learning material, which corresponds to the educational level off the learner. The educationalLevel is a property of the academicParameter classe in the userProfile.
+The following query retrieves the test material for an OER with a certain difficuty, based on the user's level.
+
+```
+PREFIX ec: <https://github.com/tibonto/educor#>
+PREFIX dc: <http://purl.org/dcx/lrmi-vocabs/alignmentType/>
+
+SELECT * 
+WHERE {
+    ?test           ?tetestKnowledgeTopic   ?knowResource.
+    ?knowResource   ?difficulty             ?difficulty.
+    ?user           ?solves                 ?test.
+    ?user           ?hasProfile             ?userProfile.
+    ?acadParam      ?storedIn               ?userProfile.
+    ?acadParam      ?educationalLevel       ?currentLevel. 
+}
+```
+
+**_Q3:   How to provide an OER to a user with a specific access mode?_**
+
+This question shows EduCOR's potential in personalizing ER and OER recommendations for a user based on their requirmenets. An example or those requirement is presented in the question on the Accessibility needs of the user. Accessibility class is related to both userProfile and educationalResource classes. It can be retrieved for a user' requirement as foollows:
+
+```
+PREFIX ec: <https://github.com/tibonto/educor#>
+PREFIX dc: <http://purl.org/dcx/lrmi-vocabs/alignmentType/>
+
+SELECT * 
+WHERE {
+    ?userProfile            ?accessibility              ?accessibility.
+    ?userProfile            ?definesLearningPath        ?learningPath.
+    ?learningPath           ?consistsOfKnowledge        ?knowledgeTopic.
+    ?knowledgeTopic         ?hasEducationalResource     ?EducationalResource.
+    ?EducationalResource    ?accessibility              ?accessibility.
+}
+```
+
+**_Q4:   How to retrieve required OERs for a certain job skill?_**
+
+This question is meant to represent the links that EduCOR draws between OERs and the skills that can be gained from them. The Skill class is defined in EduCOR from the labour-market perspective. It is related to the educationalResource class throuh its corresponding knwoeldgeTopic.
+The correcponding query:
+
+```
+PREFIX ec: <https://github.com/tibonto/educor#>
+PREFIX dc: <http://purl.org/dcx/lrmi-vocabs/alignmentType/>
+
+SELECT * 
+WHERE {
+    ?skill             ?requiresKnowedgeTopic      ?knowledgeTopic.
+    ?knowledgeTopic    ?hasEducationalResource     ?EducationalResource.
+}
+```
+
+**_Q5:   What is required to generate a personalized learning path?_**
+ 
+This question points out that a learning recommendation that targets acmplex skill, may include mltiple educational resources or knowledge topics. The learningPath class in EduCOR offers this possibility, since it is generated from the Recommendation class and ends with the targeted knwoedgeTopic. 
+The following query returns the learning paths for a certain user.
+
+```
+PREFIX ec: <https://github.com/tibonto/educor#>
+PREFIX dc: <http://purl.org/dcx/lrmi-vocabs/alignmentType/>
+
+SELECT * 
+WHERE {
+    ?user              ?hasProfile             ?userProfile.
+    ?recommendation    ?generatedFrom          ?userProfile.
+    ?recommendation    ?definesLearningPath    ?learningPath.
+}
+```
+
+**_Q6:   How to personalize a learning recommendation based on a user’s psychological state?_**
+
+This question highlights the strength of EduCOR in modelling the users. A personalized recommendation is generated to a user based on their profile. The userProfile class includes the academicParamater, psychologicalParameter, learningPreferenc and learningGoal classes, to model the behaviour, interest and intention of the user respectively. Those factors are required to personallize the OER recommendation. An example is shown in the following query on the role of psychological parameters in recommmendting certain educational resources.
+
+```
+PREFIX ec: <https://github.com/tibonto/educor#>
+PREFIX dc: <http://purl.org/dcx/lrmi-vocabs/alignmentType/>
+
+SELECT * 
+WHERE {
+    ?psychologicalParameter    ?storedIn                   ?userProfile.
+    ?recommendation            ?generatedFrom              ?userProfile.
+    ?recommendation            ?definesLearningPath        ?learningPath.
+    ?learningPath              ?consistsOfKnowledge        ?knowledgeTopic.
+    ?knowledgeTopic            ?hasEducationalResource     ?EducationalResource.
+}
+```
 
 ## Tools used during development
 

@@ -158,7 +158,7 @@ WHERE {
     ?recommendation            ?generatedFrom              ?userProfile.
     ?recommendation            ?definesLearningPath        ?learningPath.
     ?learningPath              ?consistsOfKnowledge        ?knowledgeTopic.
-    ?knowledgeTopic            ?testExercise               ?Exercise.
+    ?knowledgeTopic            ?hasExercise                ?Exercise.
     ?Exercise                  ?timeRequired               ?timeRequired.    
 }
 ```

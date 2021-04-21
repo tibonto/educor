@@ -146,7 +146,7 @@ WHERE {
 
 **_Q6:   How to personalize a learning recommendation based on a user’s psychological state?_**
 
-This question highlights the strength of EduCOR in modelling the users. A personalized recommendation is generated to a user based on their profile. The userProfile class includes the academicParamater, psychologicalParameter, learningPreferenc and learningGoal classes, to model the behaviour, interest and intention of the user respectively. Those factors are required to personallize the OER recommendation. An example is shown in the following query on the role of psychological parameters in recommmendting certain educational resources.
+This question highlights the strength of EduCOR in modelling the users. A personalized recommendation is generated to a user based on their profile. The userProfile class includes the academicParamater, psychologicalParameter, learningPreferenc and learningGoal classes, to model the behaviour, interest and intention of the user respectively. Those factors are required to personallize the OER recommendation. An example is shown in the following query, where the psychological status of the learner influences the duration of recomended exercise (e.g. recommend shorter exercises when the learner is tired).
 
 ```
 PREFIX ec: <https://github.com/tibonto/educor#>
@@ -158,7 +158,8 @@ WHERE {
     ?recommendation            ?generatedFrom              ?userProfile.
     ?recommendation            ?definesLearningPath        ?learningPath.
     ?learningPath              ?consistsOfKnowledge        ?knowledgeTopic.
-    ?knowledgeTopic            ?hasEducationalResource     ?EducationalResource.
+    ?knowledgeTopic            ?testExercise               ?Exercise.
+    ?Exercise                  ?timeRequired               ?timeRequired.    
 }
 ```
 

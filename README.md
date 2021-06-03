@@ -67,9 +67,9 @@ PREFIX dc: <http://purl.org/dcx/lrmi-vocabs/alignmentType/>
 
 SELECT * 
 WHERE {
-    ?learningPath      ?hasLearningGoal            ?LearningGoal.
-    ?learningPath      ?consistsOfKnowledge        ?knowledgeTopic.
-    ?knowledgeTopic    ?hasEducationalResource     ?EducationalResource.
+    ?learningPath      ec:hasLearningGoal            ?LearningGoal.
+    ?learningPath      ec:consistsOfKnowledge        ?knowledgeTopic.
+    ?knowledgeTopic    ec:hasEducationalResource     ?EducationalResource.
 }
 ```
 
@@ -84,12 +84,12 @@ PREFIX dc: <http://purl.org/dcx/lrmi-vocabs/alignmentType/>
 
 SELECT * 
 WHERE {
-    ?test           ?tetestKnowledgeTopic   ?knowResource.
-    ?knowResource   ?difficulty             ?difficulty.
-    ?user           ?solves                 ?test.
-    ?user           ?hasProfile             ?userProfile.
-    ?acadParam      ?storedIn               ?userProfile.
-    ?acadParam      ?educationalLevel       ?currentLevel. 
+    ?test           ec:tetestKnowledgeTopic   ?knowResource.
+    ?knowResource   ec:difficulty             ?difficulty.
+    ?user           ec:solves                 ?test.
+    ?user           ec:hasProfile             ?userProfile.
+    ?acadParam      ec:storedIn               ?userProfile.
+    ?acadParam      ec:educationalLevel       ?currentLevel. 
 }
 ```
 
@@ -103,11 +103,11 @@ PREFIX dc: <http://purl.org/dcx/lrmi-vocabs/alignmentType/>
 
 SELECT * 
 WHERE {
-    ?userProfile            ?accessibility              ?accessibility.
-    ?userProfile            ?definesLearningPath        ?learningPath.
-    ?learningPath           ?consistsOfKnowledge        ?knowledgeTopic.
-    ?knowledgeTopic         ?hasEducationalResource     ?EducationalResource.
-    ?EducationalResource    ?accessibility              ?accessibility.
+    ?userProfile            ec:accessibility              ?accessibility.
+    ?userProfile            ec:definesLearningPath        ?learningPath.
+    ?learningPath           ec:consistsOfKnowledge        ?knowledgeTopic.
+    ?knowledgeTopic         ec:hasEducationalResource     ?EducationalResource.
+    ?EducationalResource    ec:accessibility              ?accessibility.
 }
 ```
 
@@ -122,8 +122,8 @@ PREFIX dc: <http://purl.org/dcx/lrmi-vocabs/alignmentType/>
 
 SELECT * 
 WHERE {
-    ?skill             ?requiresKnowedgeTopic      ?knowledgeTopic.
-    ?knowledgeTopic    ?hasEducationalResource     ?EducationalResource.
+    ?skill             ec:requiresKnowedgeTopic      ?knowledgeTopic.
+    ?knowledgeTopic    ec:hasEducationalResource     ?EducationalResource.
 }
 ```
 
@@ -138,9 +138,9 @@ PREFIX dc: <http://purl.org/dcx/lrmi-vocabs/alignmentType/>
 
 SELECT * 
 WHERE {
-    ?user              ?hasProfile             ?userProfile.
-    ?recommendation    ?generatedFrom          ?userProfile.
-    ?recommendation    ?definesLearningPath    ?learningPath.
+    ?user              ec:hasProfile             ?userProfile.
+    ?recommendation    ec:generatedFrom          ?userProfile.
+    ?recommendation    ec:definesLearningPath    ?learningPath.
 }
 ```
 
@@ -154,12 +154,12 @@ PREFIX dc: <http://purl.org/dcx/lrmi-vocabs/alignmentType/>
 
 SELECT * 
 WHERE {
-    ?psychologicalParameter    ?storedIn                   ?userProfile.
-    ?recommendation            ?generatedFrom              ?userProfile.
-    ?recommendation            ?definesLearningPath        ?learningPath.
-    ?learningPath              ?consistsOfKnowledge        ?knowledgeTopic.
-    ?knowledgeTopic            ?hasExercise                ?Exercise.
-    ?Exercise                  ?timeRequired               ?timeRequired.    
+    ?psychologicalParameter    ec:storedIn                   ?userProfile.
+    ?recommendation            ec:generatedFrom              ?userProfile.
+    ?recommendation            ec:definesLearningPath        ?learningPath.
+    ?learningPath              ec:consistsOfKnowledge        ?knowledgeTopic.
+    ?knowledgeTopic            ec:hasExercise                ?Exercise.
+    ?Exercise                  ec:timeRequired               ?timeRequired.    
 }
 ```
 

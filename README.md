@@ -89,7 +89,7 @@ WHERE {
     ?user           ec:solves                 ?test.
     ?user           ec:hasProfile             ?userProfile.
     ?acadParam      ec:storedIn               ?userProfile.
-    ?acadParam      ec:educationalLevel       ?currentLevel. 
+    ?acadParam      dc:educationalLevel       ?currentLevel. 
 }
 ```
 

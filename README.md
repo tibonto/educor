@@ -150,7 +150,7 @@ This question highlights the strength of EduCOR in modelling the users. A person
 
 ```
 PREFIX ec: <https://github.com/tibonto/educor#>
-PREFIX sc: <https://schema.org/timeRequired>
+PREFIX sc: <https://schema.org/>
 
 SELECT * 
 WHERE {

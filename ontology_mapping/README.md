@@ -30,7 +30,7 @@ Having the classes mapped from EduCOR to each of the gold standard schemas, we c
 ### 4. Coverage calculation through Recall
 we follow the work of [Brewster et al.](https://eprints.soton.ac.uk/259062/) to calculate the Recall, as defined by the information-retrieval domain, to represent the coverage of EduCOR. 
 
-<img src="merlot_mapping.png" width="48%" />  <img src="merlot_recall.png" width="48%" /> 
+<img src="merlot_mapping.PNG" width="48%" />  <img src="merlot_recall.png" width="48%" /> 
 
 In this adaption, we define the true positive value as the number of classes covered by EduCOR and existing in the gold schema, while the false negative is define by the number of classes in the schema that EduCOR did not cover. The calculated recall values indicated the ability of EduCOR ontology to represent data in the selected repositories with a high coverage level of more than 83%.
 

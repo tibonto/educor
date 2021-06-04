@@ -13,7 +13,7 @@ Four steps are required to conduct an objective mapping to the gold-standard sch
 4. Coverage calculation through Recall
 
 
-<img src="mappint_process.png" width="100%" />
+<img src="mappint_process2.png" width="100%" />
 
 ### 1. Schema extraction
 Since the APIs of the selected repositories are not open, we conduct a thorough analysis of repositories' schemas based on the information on their websites, user guides, and the use of hosted materials and resources. We extract the overall class representations of the three schemas. We identify classes, object properties and data-type properties from those schemas to the best of our knowledge, in order to have a clear representation of the repository.

@@ -1,5 +1,5 @@
 
-# Ontology mapping for gold standard evaluation
+# Mapping EduCOR to gold standard schemas for evaluation
 
 To measure EduCOR's coverage and adaptability towards other existing ontologies,
 we select three well-established repositories for ER resources, namely

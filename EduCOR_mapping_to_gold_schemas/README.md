@@ -30,7 +30,7 @@ Having the classes mapped from EduCOR to each of the gold standard schemas, we c
 ### 4. Coverage calculation through Recall
 we follow the work of [Brewster et al.](https://eprints.soton.ac.uk/259062/) to calculate the Recall, as defined by the information-retrieval domain, to represent the coverage of EduCOR. 
 
-<img src="merlot_mapping.PNG" width="48%" />  <img src="merlot_recall.png" width="48%" /> 
+<img src="recall_equation.png" width="48%" />
 
 In this adaption, we define the true positive value as the number of classes covered by EduCOR and existing in the gold schema, while the false negative is define by the number of classes in the schema that EduCOR did not cover. The calculated recall values indicated the ability of EduCOR ontology to represent data in the selected repositories with a high coverage level of more than 83%.
 
@@ -51,7 +51,7 @@ The previous examples show the importance of analyzing and understanding the mea
 Mapped classes and the calculated Recall value are given as follows:
 
 
------------- maaped clasees and Recall images.
+<img src="merlot_mapping.PNG" width="48%" />  <img src="merlot_recall.png" width="48%" /> 
 
 
 ## Mapping to skillscommons repository
@@ -63,7 +63,7 @@ Another feature that distinguishes skillscommons schema is the highlight it give
 
 Class mapping and the Recall are given as follows:
 
------------- maaped clasees and Recall images.
+<img src="skillsCommons_mapping.PNG" width="48%" />  <img src="skillsCommons_recall.png" width="48%" /> 
 
 
 ## Mapping to OER-Commons repository
@@ -73,4 +73,4 @@ OER-Commons show an different focus in comparison to the previous two repositori
 
 Quality is also a point that EduCOR focuses on, through the "Quality Indicator" class. However, we keep the definition of this class generic enough to represent not only the standards in OER-Commons, but also any other standards that the repository owners might want to use for their systems. 
 
-
+<img src="OERCommons_mapping.PNG" width="48%" />  <img src="oer-commons_recall.png" width="48%" /> 

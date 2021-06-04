@@ -84,7 +84,7 @@ PREFIX dc: <http://purl.org/dcx/lrmi-vocabs/alignmentType/>
 
 SELECT * 
 WHERE {
-    ?test           ec:tetestKnowledgeTopic   ?knowResource.
+    ?test           ec:testKnowledgeTopic     ?knowResource.
     ?knowResource   ec:difficulty             ?difficulty.
     ?user           ec:solves                 ?test.
     ?user           ec:hasProfile             ?userProfile.
@@ -122,7 +122,7 @@ PREFIX dc: <http://purl.org/dcx/lrmi-vocabs/alignmentType/>
 
 SELECT * 
 WHERE {
-    ?skill             ec:requiresKnowedgeTopic      ?knowledgeTopic.
+    ?skill             ec:requiresKnowledge          ?knowledgeTopic.
     ?knowledgeTopic    ec:hasEducationalResource     ?EducationalResource.
 }
 ```
@@ -150,7 +150,7 @@ This question highlights the strength of EduCOR in modelling the users. A person
 
 ```
 PREFIX ec: <https://github.com/tibonto/educor#>
-PREFIX dc: <http://purl.org/dcx/lrmi-vocabs/alignmentType/>
+PREFIX sc: <https://schema.org/timeRequired>
 
 SELECT * 
 WHERE {
@@ -159,7 +159,7 @@ WHERE {
     ?recommendation            ec:definesLearningPath        ?learningPath.
     ?learningPath              ec:consistsOfKnowledge        ?knowledgeTopic.
     ?knowledgeTopic            ec:hasExercise                ?Exercise.
-    ?Exercise                  ec:timeRequired               ?timeRequired.    
+    ?Exercise                  sc:timeRequired               ?timeRequired.    
 }
 ```
 

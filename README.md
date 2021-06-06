@@ -84,7 +84,7 @@ PREFIX dc: <http://purl.org/dcx/lrmi-vocabs/alignmentType/>
 
 SELECT * 
 WHERE {
-    ?test           ec:tetestKnowledgeTopic   ?knowResource.
+    ?test           ec:testKnowledgeTopic     ?knowResource.
     ?knowResource   ec:difficulty             ?difficulty.
     ?user           ec:solves                 ?test.
     ?user           ec:hasProfile             ?userProfile.
@@ -122,7 +122,7 @@ PREFIX dc: <http://purl.org/dcx/lrmi-vocabs/alignmentType/>
 
 SELECT * 
 WHERE {
-    ?skill             ec:requiresKnowedgeTopic      ?knowledgeTopic.
+    ?skill             ec:requiresKnowledge          ?knowledgeTopic.
     ?knowledgeTopic    ec:hasEducationalResource     ?EducationalResource.
 }
 ```

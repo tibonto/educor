@@ -89,7 +89,7 @@ WHERE {
     ?user           ec:solves                 ?test.
     ?user           ec:hasProfile             ?userProfile.
     ?acadParam      ec:storedIn               ?userProfile.
-    ?acadParam      ec:educationalLevel       ?currentLevel. 
+    ?acadParam      dc:educationalLevel       ?currentLevel. 
 }
 ```
 
@@ -150,7 +150,7 @@ This question highlights the strength of EduCOR in modelling the users. A person
 
 ```
 PREFIX ec: <https://github.com/tibonto/educor#>
-PREFIX dc: <http://purl.org/dcx/lrmi-vocabs/alignmentType/>
+PREFIX sc: <https://schema.org/>
 
 SELECT * 
 WHERE {
@@ -159,7 +159,7 @@ WHERE {
     ?recommendation            ec:definesLearningPath        ?learningPath.
     ?learningPath              ec:consistsOfKnowledge        ?knowledgeTopic.
     ?knowledgeTopic            ec:hasExercise                ?Exercise.
-    ?Exercise                  ec:timeRequired               ?timeRequired.    
+    ?Exercise                  sc:timeRequired               ?timeRequired.    
 }
 ```
 

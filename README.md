@@ -1,11 +1,12 @@
 # EduCOR: An Educational and Career-Oriented Recommendation Ontology
 ## Contents
-* [Maekdown - Introduction](#Introduction)
-* [Maekdown - Ontology page](#Ontology-page)
-* [Maekdown - Abstract](#Abstract)
-* [Maekdown - Visualisation](#Visualisation)
-* [Maekdown - Use Case](#Use-Case)
-* [Maekdown - Ontology Competency Questions](#Ontology-Competency-Questions)
+* [Introduction](#Introduction)
+* [Ontology page](#Ontology-page)
+* [Abstract](#Abstract)
+* [Visualisation](#Visualisation)
+* [Use Case](#Use-Case)
+* [Ontology Competency Questions](#Ontology-Competency-Questions)
+* [Evaluation](https://github.com/tibonto/educor/tree/main/EduCOR_mapping_to_gold_schemas#Mapping-EduCOR-to-gold-standard-schemas-for-evaluation)
 
 ## Introduction
 

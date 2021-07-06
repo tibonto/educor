@@ -54,7 +54,7 @@ Mapped classes and the calculated Recall value are given as follows:
 <img src="merlot_mapping.PNG" width="48%" />  <img src="merlot_recall.png" width="48%" /> 
 
 
-## Mapping to skillscommons repository
+## Mapping to SkillsCommons repository
 Similarly to MERLOT, skillscommons schema provides a detailed description of the OERs and their accessibility. However it follows a different approach for organizing the "Learning Resources" ("Educational Resource" class in EduCOR). This approach is based on the "Project" class which defines two types of materials, one for the individual learners, and one for the corporations that use this materials for training their employees. The last type is represented by the "Program Support Materials" class. Sine the generic definition of the "Educational Resource" class in EduCOR is used with any type of learners, it covers both of those classes in SkillsCommons schema.
 
 <img src="SkillsCommons_schema.png" width="100%" />

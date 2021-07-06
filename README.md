@@ -1,5 +1,15 @@
 # EduCOR: An Educational and Career-Oriented Recommendation Ontology
-## Context
+## Contents
+* [Introduction](#Introduction)
+* [Ontology page](#Ontology-page)
+* [Abstract](#Abstract)
+* [Visualisation](#Visualisation)
+* [Use Case](#Use-Case)
+* [Ontology Competency Questions](#Ontology-Competency-Questions)
+* [Evaluation](https://github.com/tibonto/educor/tree/main/EduCOR_mapping_to_gold_schemas#Mapping-EduCOR-to-gold-standard-schemas-for-evaluation)
+* [Patterns](https://github.com/tibonto/educor/tree/main/patterns#EduCOR-patterns)
+
+## Introduction
 
 EduCOR is an educational ontology for personalized recommendation learning systems that is based on a learning path and user profile. It represents the key components for a personalized learning system based on our requirement analysis.
 
@@ -21,19 +31,13 @@ This is an overview of the classes in EduCOR ontology.
 
 Through our requirement analysis we identified the key components for our representation. These key components formulate homonym patterns. Each pattern of the ontology is highlighted individually:
 
-A: Educational resource pattern
-
-B: Skill Pattern
-
-C: Knowledge topic Pattern
-
-D: Test pattern
-
-E: Learning path pattern
-
-F: Recommendation Pattern
-
-G: User profile pattern
+ * [A: Educational Resource](https://github.com/tibonto/educor/tree/main/patterns#Educational-Resource)
+ * [B: Skill](https://github.com/tibonto/educor/tree/main/patterns#Skill) 
+ * [C: Test](https://github.com/tibonto/educor/tree/main/patterns#Test)
+ * [D: Knowledge Topic](https://github.com/tibonto/educor/tree/main/patterns#Knowledge-Topic)
+ * [E: Learning Path](https://github.com/tibonto/educor/tree/main/patterns#Learning-Path)
+ * [F: Recommendation](https://github.com/tibonto/educor/tree/main/patterns#Recommendation)
+ * [G: User Profile](https://github.com/tibonto/educor/tree/main/patterns#User-Profile)
 
 ## Use-Case
 

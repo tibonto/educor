@@ -1,7 +1,7 @@
 # EduCOR: An Educational and Career-Oriented Recommendation Ontology
 ## Contents
 * [Introduction](#Introduction)
-* [Licence and Canonical Citation)(#Licence-and-Canonical-Citation)
+* [Licence and Canonical Citation](#Licence-and-Canonical-Citation)
 * [Ontology page](#Ontology-page)
 * [Abstract](#Abstract)
 * [Visualisation](#Visualisation)

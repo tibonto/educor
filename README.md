@@ -1,6 +1,7 @@
 # EduCOR: An Educational and Career-Oriented Recommendation Ontology
 ## Contents
 * [Introduction](#Introduction)
+* [Licence and Canonical Citation)(#Licence-and-Canonical-Citation)
 * [Ontology page](#Ontology-page)
 * [Abstract](#Abstract)
 * [Visualisation](#Visualisation)
@@ -12,6 +13,10 @@
 ## Introduction
 
 EduCOR is an educational ontology for personalized recommendation learning systems that is based on a learning path and user profile. It represents the key components for a personalized learning system based on our requirement analysis.
+
+## Licence and Canonical Citation
+
+Our data are published under the licence [CC0 1.0 Universell (CC0 1.0) Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/deed.de) , and it has the canonical citation “E. Ilkou et al: EduCOR: An Educational and Career-Oriented Recommendation Ontology. April 2021.”.
 
 ## Ontology page
 

@@ -86,14 +86,14 @@
     <h1 class="mt-5">EduCOR Patterns</h1>
     <h2> Educational Resource </h2>
    <div class='container2'>
-   <div class="left">
+   <div class="right">
    <img src="EduCOR-patternA" alt="Educational Resource Pattern" align="right">
     </div>  
     </div>  
     <p class="lead" align="justify"> This pattern represents the actual educational materials used to learn a specific Knowledge Topic (pattern D). Educational resources in EduCOR are described with three main classes and several data-type properties. An educational resource has one or more Quality Indicators. Each indicator can measure the quality of a specific feature of the educational resource. For example, a video educational resource can have a quality value of its content and another quality value for its resolution. Educational resources also have different Multimedia Types, including the most common four classes (Video, Audio, Image, Text). The educational resource can be accessed in different methods by different users. Therefore, the Accessibility class in this pattern is used to represent: 1) the accessibility needs of a certain user. For example, the font size requirements of a user with visual impairment. 2) the access rights of different users. This can be the case of an OER repository that allows accessing advanced materials for users who finished the basic ones, for instance. The Accessibility class is directly related to the User Profile (pattern G) for personalizing the user's access to educational resources.</p>
      <h2> Skill </h2>
     <div class='container2'>
-   <div class="left">
+   <div class="right">
    <img src="EduCOR-patternB" alt="Skill Pattern" align="right">
    </div>  
      </div>  
@@ -101,7 +101,7 @@
      Following the <a href="https://en.wikipedia.org/wiki/Learning_object_metadata"> Learning object metadata LOM </a> model, each Skill has a classification, whose taxons can be traced back through their paths. We adopt this model to represent skills with different content or hierarchical order. The difference between skills might not be clear from the name, but rather the Learning Outcome of this skill, i.e. the actual use of the skill or skill-set. Therefore, the Skills class has a direct connection to the Learning Outcome class in Pattern E. </p>
         <h2> Test </h2>
      <div class='container2'>
-   <div class="left">
+   <div class="right">
    <img src="EduCOR-patternC.png" alt="Test Pattern" align="right">
     </div>  
       </div>  
@@ -109,14 +109,14 @@
    <h3></h3>     
    <h2>Knowledge Topic </h2>
       <div class='container2'>
-  <div class="left">
+  <div class="right">
    <img src="EduCOR-patternD.png" alt="Knowledge Topic Pattern" align="right">
    </div>  
        </div>  
     <p class="lead" align="justify"> The Knowledge Topic class lies at the centre of EduCOR ontology. It represents the topics that users require to learn to gain a particular skill. It logically links the majority of other patterns in EduCOR together. Each Knowledge Topic has Educational Resources (pattern A) that are used to learn the topic. The Knowledge Topic is also the foundation of gaining a job Skill (pattern B). Learning a Knowledge Topic can follow a specific Methodology, which defines how a user received the information in this topic. It can also have a unique Theory as a foundation of the topic. The Knowledge Topic is supported by Tests and Exercises, which are meant to provide the user with the ability to assess and practice the tropic. This links the Knowledge Topic to the Test class in pattern C. Similarly to the Skill class, the Knowledge Topic has a unique Learning Outcome (pattern E). Since a complex Skill might require multiple Knowledge Topics to gain it, those topics can then be arranged in a sequence represented by the Learning Path class (pattern E).  </p>
    <h2> Learning Path </h2>
        <div class='container2'>
-   <div class="left">
+   <div class="right">
    <img src="EduCOR-patternE.png" alt="Learning Path Pattern" align="right">
    </div>  
         </div>  
@@ -125,7 +125,7 @@ Each Learning Path has a final Learning Goal, which is usually the last step of 
 Since the Learning Path has a strong personal nature, patterns E and G (Learning Path the User Profile respectively) are significantly connected. This is to match the Learning Goals of the user with the ones that a Learning Path achieves. The User Profile also provides the needed information to personalize the learning path itself and stores the previous Learning Paths that the user followed. </p>
    <h2> Recommendation </h2>
         <div class='container2'>
-   <div class="left">
+   <div class="right">
    <img src="EduCOR-patternF.png" alt="Recommendation Pattern" align="right">
  </div>  
          </div>  
@@ -133,7 +133,7 @@ Since the Learning Path has a strong personal nature, patterns E and G (Learning
 The recommendation class in EduCOR is designed to provide OER hosting repositories and educational platforms to generate learning recommendations for their users. The Recommendation is personalized to the user’s needs based on their User Profile (pattern G). It defines an element in the Learning Path (pattern E). Therefore, by generating a sequence of Knowledge Topic recommendations, a full Learning Path is defined and personalized for each user. The definition of the Recommendation class in EduCOR allows for expanding the definition of the recommended element. In other words, a recommendation does not have to be a Knowledge Topic, but also a Test or an Exercise, when needed. This allows for more flexibility in implementing EduCOR in multiple domains.   </p>
    <h2> User Profile </h2>
          <div class='container2'>
-   <div class="left">
+   <div class="right">
    <img src="EduCOR-patternG.png" alt="User Profile" align="right">
    </div>  
           </div>  

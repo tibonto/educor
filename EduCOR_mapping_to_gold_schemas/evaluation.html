@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en" class="h-100">
+ 
+  <head>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>EduCOR: An Educational and Career-Oriented Recommendation Ontology</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sticky-footer-navbar/">
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+     
+   div {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
+    </style>
+
+  
+
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-column h-100">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./">EduCOR</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="../index.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../patterns/patterns.html">Patterns</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../competencyquestions.html">Competency Questions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../usecase.html">Use Case</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page"  href="/">Evaluation</a>
+          </li>
+         <li class="nav-item">
+            <a class="nav-link" href="http://ontology.tib.eu/educor/">Ontology Page</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+  <div class="container">
+   <h1></h1>
+    <h1 class="mt-5">Mapping EduCOR to gold standard schemas for evaluation</h1>
+    <p class="lead" align="justify">
+    To measure EduCOR's coverage and adaptability towards other existing ontologies,
+we select three well-established repositories for ER resources, namely <a href="https://www.merlot.org/">Merlot</a>, <a href="https://www.skillscommons.org/">SkilsCommons</a>, and <a href="https://www.oercommons.org/">OERCommons</a>. The evaluation process is then conducted by mapping EduCOR classes to the underlying schema of each repository. Mapping refers to
+identifying classes in the gold standards that classes in EduCOR can represent.
+
+Four steps are required to conduct an objective mapping to the gold-standard schemas:
+    </p>
+     <ol>
+  <li>Schema extraction.</li>
+  <li>Class name analysis.</li>
+  <li>Class one-on-one mapping.</li>
+  <li>Coverage calculation through Recall</li>
+</ol> 
+
+   <div class='container2'>
+        <div class="left">
+            <img src="mappint_process2.png" width="100%" />
+        </div>  
+   </div>
+    <div class="left" >
+    <h3>1. Schema extraction</h3>
+     <p class="lead" align="justify"> 
+Since the APIs of the selected repositories are not open, we conduct a thorough analysis of repositories' schemas based on the information on their websites, user guides, and the use of hosted materials and resources. We extract the overall class representations of the three schemas. We identify classes, object properties and data-type properties from those schemas to the best of our knowledge, in order to have a clear representation of the repository.
+ </p>
+     <h3> 2. Class name analysis </h3>
+    <p class="lead" align="justify"> 
+Mapping is dependent on the clear definition of the schema's vocabulary. Different class names may be used by different repositories to express the came concept. Similarly, once class name can have different meanings in different repositories. Therefore, we analyze the extracted schemas and the meaning of their class names, to ensure the correctness in mapping those to EduCOR's classes. Understanding the meaning of a class name was accomplished on two levels: 1) analyzing the class functionality in the corresponding schema, which includes its connections to other classes and the individuals created from it. 2) conducting the analysis by multiple developers, to secure different perspectives and achieve a common understanding of the class meaning.  </p>
+     <h3> 3. Class one-on-one mapping </h3>
+      <p class="lead" align="justify"> Once class meanings are decided, classes from the each repository are then mapped to EduCOR's classes one by one. With class mapping, we look for the classes in the gold standard schema, which are covered by a class in EduCOR. Since the final goals is to measure the coverage and adaptability, we focus on: 1) measuring how much EduCOR's classes cover the repository's classes, and 2) how much the same classes in EduCOR can represent classes from multiple other repositories.
+Within this step of the mapping, we map the ontology classes only, not the data-type properties. This is because the actual types of these properties are not known from the chosen repositories, and since the attributes of the class can be extended as much as needed without affecting the meaning of the class or its function in the overall schema.
+
+Having the classes mapped from EduCOR to each of the gold standard schemas, we can now measure coverage value numerically.
+</p>
+       <h3> 4. Coverage calculation through Recall </h3>
+      <p class="lead" align="justify"> We follow the work of <a href="https://eprints.soton.ac.uk/259062"> Brewster et al.</a> to calculate the Recall, as defined by the information-retrieval domain, to represent the coverage of EduCOR. 
+
+<img src="recall_equation.png" width="48%" />
+
+In this adaption, we define the true positive value as the number of classes covered by EduCOR and existing in the gold schema, while the false negative is define by the number of classes in the schema that EduCOR did not cover. The calculated recall values indicated the ability of EduCOR ontology to represent data in the selected repositories with a high coverage level of more than 83%.
+
+In the following sections, this mapping process is explained in details for each of the selected gold standard schemas.
+</p>
+      <h3> Mapping to MERLOT repository </h3>
+      <p class="lead" align="justify"> MERLOT includes a rich representation of the ERs and OERs that are hosted in the repository. It shoes a noticeable focus on the OER meta-data, the accessibility of OERs and the user roles in the system.
+
+<img src="MERLOT_schema.png" width="100%" />
+
+Educational resources in MERLOT are described with the "Learning Materials" class. They are a part of a course, which is represented by the "Course e-Portfolio" class. Users in MERLOT have multiple roles, including students, administrators, teachers, etc. Some teaching roles have also the potential to offer consultation hours to students, which are represented in the schema by the "Virtual Speakers Bureau" class.
+
+
+MERLOT's classes, denoted in blue boxes, are then mapped to the EduCOR's classes. "Learning Material" class is represented by EduCOR's "Educational Recourse" class. As the "Learning Material" class is a part of a "course e-Portfolio" in MERLOT, the "Educational Recourse" is a part of the "Knowledge Topic" class in EduCOR. This class also shows that MERLOT defines an "Pedagogical Approach" class, which corresponds to the "Methodology" class in EduCOR.
+The previous examples show the importance of analyzing and understanding the meaning of class names during the mapping process.
+
+Mapped classes and the calculated Recall value are given as follows:
+
+
+<img src="merlot_mapping.PNG" width="48%" />  <img src="merlot_recall.png" width="48%" /> 
+</p>
+      
+       <h3> Mapping to SkillsCommons repository </h3>
+      <p class="lead" align="justify"> Similarly to MERLOT, skillscommons schema provides a detailed description of the OERs and their accessibility. However it follows a different approach for organizing the "Learning Resources" ("Educational Resource" class in EduCOR). This approach is based on the "Project" class which defines two types of materials, one for the individual learners, and one for the corporations that use this materials for training their employees. The last type is represented by the "Program Support Materials" class. Sine the generic definition of the "Educational Resource" class in EduCOR is used with any type of learners, it covers both of those classes in SkillsCommons schema.
+
+<img src="SkillsCommons_schema.png" width="100%" />
+
+Another feature that distinguishes skillscommons schema is the highlight it gives to the material relations to inducstry, which is given through the "Industry Occupation" lass. This also clearly intesects with the focus the EduCOR gives to linking the "Educational Resource" to job-market "Skill" class, through the "Educational Topic".
+
+Class mapping and the Recall are given as follows:
+
+<img src="skillsCommons_mapping.PNG" width="48%" />  <img src="skillsCommons_recall.png" width="48%" /> 
+<img src="recall_equation.png" width="48%" />
+
+In this adaption, we define the true positive value as the number of classes covered by EduCOR and existing in the gold schema, while the false negative is define by the number of classes in the schema that EduCOR did not cover. The calculated recall values indicated the ability of EduCOR ontology to represent data in the selected repositories with a high coverage level of more than 83%.
+
+In the following sections, this mapping process is explained in details for each of the selected gold standard schemas.
+</p>
+      
+       <h3> Mapping to OER-Commons repository </h3>
+      <p class="lead" align="justify"> OER-Commons show an different focus in comparison to the previous two repositories. Alongside the detailed description of the OERs, it describes a detailed quality assessment aspect through multiple classes. hose classes are based on certain evaluation standards such as EQuIP Rubric.
+
+<img src="OER-Commons_schema.png" width="100%" />
+
+Quality is also a point that EduCOR focuses on, through the "Quality Indicator" class. However, we keep the definition of this class generic enough to represent not only the standards in OER-Commons, but also any other standards that the repository owners might want to use for their systems. 
+
+<img src="OERCommons_mapping.PNG" width="48%" />  <img src="oer-commons_recall.png" width="48%" /> 
+</p>
+    </div>
+</div>
+
+   
+
+</main>
+          
+  </body>
+</html>

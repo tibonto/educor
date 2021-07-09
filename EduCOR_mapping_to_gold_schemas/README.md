@@ -28,7 +28,7 @@ Within this step of the mapping, we map the ontology classes only, not the data-
 Having the classes mapped from EduCOR to each of the gold standard schemas, we can now measure coverage value numerically.
 
 ### 4. Coverage calculation through Recall
-we follow the work of [Brewster et al.](https://eprints.soton.ac.uk/259062/) to calculate the Recall, as defined by the information-retrieval domain, to represent the coverage of EduCOR. 
+We follow the work of [Brewster et al.](https://eprints.soton.ac.uk/259062/) to calculate the Recall, as defined by the information-retrieval domain, to represent the coverage of EduCOR. 
 
 <img src="recall_equation.png" width="48%" />
 

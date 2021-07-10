@@ -95,7 +95,7 @@
      <p class="lead" align="justify"> This question represents the adaptability feature of our ontology. EduCOR has been tested against multiple ER and OER repositories. It scored more that 83% of <a href="https://en.wikipedia.org/wiki/Precision_and_recall">Recall</a> value for each one of them. This means that a designer of an e-learning system will have minimum adjustments to adopt OERs from multiple sources in their system.
 Retrieving the OERs from EduCOR based on a certain learningGoal is achieved through the SPARQL query:
        <pre class="language-sparql"> <code>
-PREFIX ec:  <\https://github.com/tibonto/educor#>
+PREFIX ec:  &lt;https://github.com/tibonto/educor#&gt;
 PREFIX dc:  <http://purl.org/dcx/lrmi-vocabs/alignmentType/>
 
 SELECT * 
@@ -194,21 +194,7 @@ WHERE {
 </code>   </pre>
  </p>
      
-      <h3>Q1:   How to retrieve OERs from multiple sources for a learning goal?</h3>
-     <p class="lead" align="justify"> This question represents the adaptability feature of our ontology. EduCOR has been tested against multiple ER and OER repositories. It scored more that 83% of <a href="https://en.wikipedia.org/wiki/Precision_and_recall">Recall</a> value for each one of them. This means that a designer of an e-learning system will have minimum adjustments to adopt OERs from multiple sources in their system.
-Retrieving the OERs from EduCOR based on a certain learningGoal is achieved through the SPARQL query:
-       <pre class="language-sparql"> <code>
-PREFIX ec:  <\https://github.com/tibonto/educor#>
-PREFIX dc:  <http://purl.org/dcx/lrmi-vocabs/alignmentType/>
 
-SELECT * 
-WHERE {
-    ?learningPath      ec:hasLearningGoal            ?LearningGoal.
-    ?learningPath      ec:consistsOfKnowledge        ?knowledgeTopic.
-    ?knowledgeTopic    ec:hasEducationalResource     ?EducationalResource.
-}
-</code>   </pre>
- </p>
     </div>
 </div>
 

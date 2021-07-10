@@ -96,7 +96,7 @@
 Retrieving the OERs from EduCOR based on a certain learningGoal is achieved through the SPARQL query:
        <pre class="language-sparql"> <code>
 PREFIX ec:  &lt;https://github.com/tibonto/educor#&gt;
-PREFIX dc:  <http://purl.org/dcx/lrmi-vocabs/alignmentType/>
+PREFIX dc:  &lt;http://purl.org/dcx/lrmi-vocabs/alignmentType/&gt;
 
 SELECT * 
 WHERE {
@@ -112,8 +112,8 @@ WHERE {
 This question reflects the ability of EduCOR to personalize ER and OER recommendations for a user, based on the learning material properties. The example in this case if the difficulty level of the learning material, which corresponds to the educational level off the learner. The educationalLevel is a property of the academicParameter classe in the userProfile.
 The following query retrieves the test material for an OER with a certain difficuty, based on the user's level.
        <pre class="language-sparql"> <code>
-PREFIX ec: <https://github.com/tibonto/educor#>
-PREFIX dc: <http://purl.org/dcx/lrmi-vocabs/alignmentType/>
+PREFIX ec: &lt;https://github.com/tibonto/educor#&gt;
+PREFIX dc: &lt;http://purl.org/dcx/lrmi-vocabs/alignmentType/&gt;
 
 SELECT * 
 WHERE {
@@ -130,8 +130,8 @@ WHERE {
      <p class="lead" align="justify"> This question shows EduCOR's potential in personalizing ER and OER recommendations for a user based on their requirmenets. An example or those requirement is presented in the question on the Accessibility needs of the user. Accessibility class is related to both userProfile and educationalResource classes. It can be retrieved for a user' requirement as foollows:
 
        <pre class="language-sparql"> <code>
-PREFIX ec: <https://github.com/tibonto/educor#>
-PREFIX dc: <http://purl.org/dcx/lrmi-vocabs/alignmentType/>
+PREFIX ec: &lt;https://github.com/tibonto/educor#&gt;
+PREFIX dc: &lt;http://purl.org/dcx/lrmi-vocabs/alignmentType/&gt;
 
 SELECT * 
 WHERE {
@@ -147,8 +147,8 @@ WHERE {
      <p class="lead" align="justify"> This question is meant to represent the links that EduCOR draws between OERs and the skills that can be gained from them. The Skill class is defined in EduCOR from the labour-market perspective. It is related to the educationalResource class throuh its corresponding knwoeldgeTopic.
 The correcponding query:
        <pre class="language-sparql"> <code>
-PREFIX ec: <https://github.com/tibonto/educor#>
-PREFIX dc: <http://purl.org/dcx/lrmi-vocabs/alignmentType/>
+PREFIX ec: &lt;https://github.com/tibonto/educor#&gt;
+PREFIX dc: &lt;http://purl.org/dcx/lrmi-vocabs/alignmentType/&gt;
 
 SELECT * 
 WHERE {
@@ -163,8 +163,8 @@ WHERE {
 The following query returns the learning paths for a certain user.
 
        <pre class="language-sparql"> <code>
-PREFIX ec: <https://github.com/tibonto/educor#>
-PREFIX dc: <http://purl.org/dcx/lrmi-vocabs/alignmentType/>
+PREFIX ec: &lt;https://github.com/tibonto/educor#&gt;
+PREFIX dc: &lt;http://purl.org/dcx/lrmi-vocabs/alignmentType/&gt;
 
 SELECT * 
 WHERE {
@@ -179,8 +179,8 @@ WHERE {
      <p class="lead" align="justify"> This question highlights the strength of EduCOR in modelling the users. A personalized recommendation is generated to a user based on their profile. The userProfile class includes the academicParamater, psychologicalParameter, learningPreferenc and learningGoal classes, to model the behaviour, interest and intention of the user respectively. Those factors are required to personallize the OER recommendation. An example is shown in the following query, where the psychological status of the learner influences the duration of recomended exercise (e.g. recommend shorter exercises when the learner is tired).
 
        <pre class="language-sparql"> <code>
-PREFIX ec: <https://github.com/tibonto/educor#>
-PREFIX sc: <https://schema.org/>
+PREFIX ec: &lt;https://github.com/tibonto/educor#&gt;
+PREFIX sc: &lt;https://schema.org/&gt;
 
 SELECT * 
 WHERE {

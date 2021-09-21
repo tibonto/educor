@@ -17,6 +17,10 @@ EduCOR is an educational ontology for personalized recommendation learning syste
 
 Our ontology page with the full documentation can be found in [http://ontology.tib.eu/educor](http://ontology.tib.eu/educor/)
 
+## Resource page
+
+Our resource page can be found in [https://tibonto.github.io/educor/](https://tibonto.github.io/educor/)
+
 ## Abstract
 
 With the increased dependence on online learning platforms and educational resource repositories, a unified representation of digital learning resources becomes  essential to support a dynamic  and  multi-source learning experience. We introduce the EduCOR ontology, an educational, career-oriented ontology  that  provides  a  foundation for representing  online  learning  resources for personalised learning systems. The ontology is designed to enable learning material repositories to offer learning path recommendations, which correspond to the user’s learning goals, academic and psychological parameters, and the labour-market skills that are achieved from the learning  path. We present the multiple patterns that compose the EduCOR ontology, highlighting its cross-domain applicability and integrability with other ontologies. A demonstration of the proposed ontology on the real-life learning platform [eDoer](http://edoer.eu) is discussed as a use-case. We evaluate the EduCOR ontology using both gold standard and task-based approaches. The comparison of EduCOR to three gold schemata, and its application in two use-cases, shows its coverage and adaptability to multiple OER repositories, which allows generating user-centric and labour-market oriented recommendations.
